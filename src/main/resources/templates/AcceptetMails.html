@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="AcceptetMailsHTML.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="boxReal">
+    <div class="Headline">
+        <h2>Introduktion</h2>
+    </div>
+
+</div>
+
+<div class="boxReal">
+    <div class="Headline">
+        <h2>Brugere</h2>
+    </div>
+
+    <div class="users">
+        <p th:each="user : ${test}">
+           Bruger navn: <span th:text="${user.getUserName}"></span> || Email: <span th:text="${user.getUserMail()}"></span>
+        </p>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.boxReal{
+    width: 49%;
+    height: 200px;
+    border: 1px solid black;
+    float: left;
+
+}
+.Headline{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+
+}
